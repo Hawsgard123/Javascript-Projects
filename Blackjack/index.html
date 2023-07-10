@@ -6,6 +6,24 @@
     <title>Document</title>
     <link rel="stylesheet" href="index.css" />
   </head>
-  <body></body>
+  <body>
+    <h1>Blackjack</h1>
+    <h2>RULES</h2>
+    <p>WIN: +$100 LOSE: -50$</p>
+    <h2 id="message-el">Want to play a round?</h2>
+    <div class="name-input">
+      <label for="enter-name">Name: </label>
+      <input type="text" id="enter-name" onchange="input()" />
+      <label for="enter-chip">Chips: </label>
+      <input type="number" id="enter-chip" onchange="input()" />
+      <button onclick="submit()">SUBMIT</button>
+    </div>
+
+    <h2 id="cards-el">Cards :</h2>
+    <h2 id="sum-el">Sum :</h2>
+    <button onclick="startGame()">START GAME</button>
+    <button onclick="newCard()">NEW CARD</button>
+    <h2 id="player-el"></h2>
+  </body>
   <script src="index.js"></script>
 </html>
